@@ -89,6 +89,18 @@ class BoardProviderConfig {
   String homeUrl;
   String appIconUrl;
   List<String> benefits = [];
+  //benefits begin
+  bool panelLogin = false;
+  bool highlightPin = false;
+  bool logoBranding = false;
+  bool renewalReminder = false;
+  bool hideRecommendMenu = false;
+  bool hideNodeDetails = false;
+  bool partialPanelRenewal = false;
+  bool unbanSubscription = false;
+  bool customSpell = false;
+  bool notificationPush = false;
+  //benefits end
   String botCookie;
   DateTime? lastUpdated;
   BoardProviderConfig({
@@ -115,6 +127,16 @@ class BoardProviderConfig {
     this.homeUrl = '',
     this.appIconUrl = '',
     this.benefits = const [],
+    this.panelLogin = false,
+    this.highlightPin = false,
+    this.logoBranding = false,
+    this.renewalReminder = false,
+    this.hideRecommendMenu = false,
+    this.hideNodeDetails = false,
+    this.partialPanelRenewal = false,
+    this.unbanSubscription = false,
+    this.customSpell = false,
+    this.notificationPush = false,
     this.botCookie = '', //'cf_clearance',
     this.lastUpdated,
   });
@@ -143,6 +165,16 @@ class BoardProviderConfig {
     'home_url': homeUrl,
     'app_icon_url': appIconUrl,
     'benefits': benefits,
+    'panel_login': panelLogin,
+    'highlight_pin': highlightPin,
+    'logo_branding': logoBranding,
+    'renewal_reminder': renewalReminder,
+    'hide_recommend_menu': hideRecommendMenu,
+    'hide_node_details': hideNodeDetails,
+    'partial_panel_renewal': partialPanelRenewal,
+    'unban_subscription': unbanSubscription,
+    'custom_spell': customSpell,
+    'notification_push': notificationPush,
     'bot_cookie': botCookie,
     //'last_updated': lastUpdated?.microsecondsSinceEpoch,
   };
@@ -180,6 +212,22 @@ class BoardProviderConfig {
     homeUrl = map["home_url"] ?? "";
     appIconUrl = map["app_icon_url"] ?? "";
     benefits = List<String>.from(map["benefits"] ?? []);
+    panelLogin = map["panel_login"] ?? false;
+    highlightPin = map["highlight_pin"] ?? false;
+    logoBranding = map["logo_branding"] ?? false;
+    renewalReminder = map["renewal_reminder"] ?? false;
+    hideRecommendMenu = map["hide_recommend_menu"] ?? false;
+    hideNodeDetails = map["hide_node_details"] ?? false;
+    partialPanelRenewal = map["partial_panel_renewal"] ?? false;
+    unbanSubscription = map["unban_subscription"] ?? false;
+    customSpell = map["custom_spell"] ?? false;
+    notificationPush = map["notification_push"] ?? false;
+    hideRecommendMenu = map["hide_recommend_menu"] ?? false;
+    hideNodeDetails = map["hide_node_details"] ?? false;
+    partialPanelRenewal = map["partial_panel_renewal"] ?? false;
+    unbanSubscription = map["unban_subscription"] ?? false;
+    customSpell = map["custom_spell"] ?? false;
+    notificationPush = map["notification_push"] ?? false;
     botCookie = map["bot_cookie"] ?? ""; //"cf_clearance";
     // lastUpdated = map["last_updated"] != null
     //     ? DateTime.fromMicrosecondsSinceEpoch(map["last_updated"])
