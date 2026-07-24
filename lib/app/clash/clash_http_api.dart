@@ -207,8 +207,6 @@ class ClashLog {
   }
 }
 
-class ClashProxyProviders {}
-
 class ClashProxiesNode {
   List<String> all = [];
   String name = "";
