@@ -49,6 +49,7 @@ class BoardProviderConfig {
   bool web = true;
   bool overwrite = true;
   bool overwriteDns = true;
+  String outboundDns = "";
   String version;
   String userAgreement;
   String clientServiceUrl;
@@ -88,6 +89,7 @@ class BoardProviderConfig {
     this.web = true,
     this.overwrite = true,
     this.overwriteDns = true,
+    this.outboundDns = '',
     this.version = '',
     this.userAgreement = '',
     this.clientServiceUrl = '',
@@ -126,6 +128,7 @@ class BoardProviderConfig {
     'web': web,
     'overwrite': overwrite,
     'overwrite_dns': overwriteDns,
+    'outbound_dns': outboundDns,
     'version': version,
     'user_agreement': userAgreement,
     'client_service_url': clientServiceUrl,
@@ -173,6 +176,7 @@ class BoardProviderConfig {
     web = map["web"] ?? true;
     overwrite = map["overwrite"] ?? true;
     overwriteDns = map["overwrite_dns"] ?? true;
+    outboundDns = map["outbound_dns"] ?? "";
     version = map["version"] ?? "";
     userAgreement = map["user_agreement"] ?? "";
     clientServiceUrl = map["client_service_url"] ?? "";
