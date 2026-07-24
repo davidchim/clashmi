@@ -137,6 +137,7 @@
         "password": "密碼",
         "decryptPassword": "解密密碼",
         "required": "必填",
+        "go": "繼續",
         "sudoPassword": "sudo 密碼(TUN模式需要)",
         "other": "其他",
         "dns": "DNS",

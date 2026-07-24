@@ -137,6 +137,7 @@
         "password": "Contraseña",
         "decryptPassword": "Descifrar Contraseña",
         "required": "Requerido",
+        "go": "Continuar",
         "sudoPassword": "contraseña sudo (requerida para el modo TUN)",
         "other": "Otro",
         "dns": "DNS",

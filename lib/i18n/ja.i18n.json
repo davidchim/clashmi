@@ -137,6 +137,7 @@
         "password": "パスワード",
         "decryptPassword": "複号化パスワード",
         "required": "必須",
+        "go": "続行",
         "sudoPassword": "sudo パスワード (TUNモードで必要)",
         "other": "その他",
         "dns": "DNS",

@@ -265,6 +265,7 @@ class _Translations$meta$ar implements Translations$meta$en {
 	@override String get password => 'كلمة المرور';
 	@override String get decryptPassword => 'فك تشفير كلمة المرور';
 	@override String get required => 'مطلوب';
+	@override String get go => 'متابعة';
 	@override String get sudoPassword => 'كلمة مرور sudo (مطلوبة لوضع TUN)';
 	@override String get other => 'آخر';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsAr {
 			'meta.password' => 'كلمة المرور',
 			'meta.decryptPassword' => 'فك تشفير كلمة المرور',
 			'meta.required' => 'مطلوب',
+			'meta.go' => 'متابعة',
 			'meta.sudoPassword' => 'كلمة مرور sudo (مطلوبة لوضع TUN)',
 			'meta.other' => 'آخر',
 			'meta.dns' => 'DNS',

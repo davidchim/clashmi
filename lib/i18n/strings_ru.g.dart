@@ -265,6 +265,7 @@ class _Translations$meta$ru implements Translations$meta$en {
 	@override String get password => 'Пароль';
 	@override String get decryptPassword => 'Пароль расшифровки';
 	@override String get required => 'Необходимо';
+	@override String get go => 'Продолжить';
 	@override String get sudoPassword => 'Пароль sudo (требуется для режима TUN)';
 	@override String get other => 'Другой';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsRu {
 			'meta.password' => 'Пароль',
 			'meta.decryptPassword' => 'Пароль расшифровки',
 			'meta.required' => 'Необходимо',
+			'meta.go' => 'Продолжить',
 			'meta.sudoPassword' => 'Пароль sudo (требуется для режима TUN)',
 			'meta.other' => 'Другой',
 			'meta.dns' => 'DNS',

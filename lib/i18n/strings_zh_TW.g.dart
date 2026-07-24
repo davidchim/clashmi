@@ -265,6 +265,7 @@ class Translations$meta$zh_TW implements Translations$meta$en {
 	@override String get password => '密碼';
 	@override String get decryptPassword => '解密密碼';
 	@override String get required => '必填';
+	@override String get go => '繼續';
 	@override String get sudoPassword => 'sudo 密碼(TUN模式需要)';
 	@override String get other => '其他';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsZhTw {
 			'meta.password' => '密碼',
 			'meta.decryptPassword' => '解密密碼',
 			'meta.required' => '必填',
+			'meta.go' => '繼續',
 			'meta.sudoPassword' => 'sudo 密碼(TUN模式需要)',
 			'meta.other' => '其他',
 			'meta.dns' => 'DNS',

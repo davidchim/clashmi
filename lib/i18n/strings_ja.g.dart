@@ -265,6 +265,7 @@ class _Translations$meta$ja implements Translations$meta$en {
 	@override String get password => 'パスワード';
 	@override String get decryptPassword => '複号化パスワード';
 	@override String get required => '必須';
+	@override String get go => '続行';
 	@override String get sudoPassword => 'sudo パスワード (TUNモードで必要)';
 	@override String get other => 'その他';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsJa {
 			'meta.password' => 'パスワード',
 			'meta.decryptPassword' => '複号化パスワード',
 			'meta.required' => '必須',
+			'meta.go' => '続行',
 			'meta.sudoPassword' => 'sudo パスワード (TUNモードで必要)',
 			'meta.other' => 'その他',
 			'meta.dns' => 'DNS',

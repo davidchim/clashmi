@@ -265,6 +265,7 @@ class _Translations$meta$es implements Translations$meta$en {
 	@override String get password => 'Contraseña';
 	@override String get decryptPassword => 'Descifrar Contraseña';
 	@override String get required => 'Requerido';
+	@override String get go => 'Continuar';
 	@override String get sudoPassword => 'contraseña sudo (requerida para el modo TUN)';
 	@override String get other => 'Otro';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsEs {
 			'meta.password' => 'Contraseña',
 			'meta.decryptPassword' => 'Descifrar Contraseña',
 			'meta.required' => 'Requerido',
+			'meta.go' => 'Continuar',
 			'meta.sudoPassword' => 'contraseña sudo (requerida para el modo TUN)',
 			'meta.other' => 'Otro',
 			'meta.dns' => 'DNS',

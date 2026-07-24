@@ -137,6 +137,7 @@
         "password": "رمز‌عبور",
         "decryptPassword": "دکريپت رمز‌عبور",
         "required": "الزامی",
+        "go": "ادامه",
         "sudoPassword": "رمز عبور sudo (برای حالت TUN لازم است)",
         "other": "دیگر",
         "dns": "DNS",

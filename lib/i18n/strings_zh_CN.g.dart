@@ -265,6 +265,7 @@ class Translations$meta$zh_CN implements Translations$meta$en {
 	@override String get password => '密码';
 	@override String get decryptPassword => '解密密码';
 	@override String get required => '必填';
+	@override String get go => '继续';
 	@override String get sudoPassword => 'sudo 密码(TUN模式需要)';
 	@override String get other => '其他';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsZhCn {
 			'meta.password' => '密码',
 			'meta.decryptPassword' => '解密密码',
 			'meta.required' => '必填',
+			'meta.go' => '继续',
 			'meta.sudoPassword' => 'sudo 密码(TUN模式需要)',
 			'meta.other' => '其他',
 			'meta.dns' => 'DNS',

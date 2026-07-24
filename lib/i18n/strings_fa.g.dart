@@ -265,6 +265,7 @@ class _Translations$meta$fa implements Translations$meta$en {
 	@override String get password => 'رمز‌عبور';
 	@override String get decryptPassword => 'دکريپت رمز‌عبور';
 	@override String get required => 'الزامی';
+	@override String get go => 'ادامه';
 	@override String get sudoPassword => 'رمز عبور sudo (برای حالت TUN لازم است)';
 	@override String get other => 'دیگر';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsFa {
 			'meta.password' => 'رمز‌عبور',
 			'meta.decryptPassword' => 'دکريپت رمز‌عبور',
 			'meta.required' => 'الزامی',
+			'meta.go' => 'ادامه',
 			'meta.sudoPassword' => 'رمز عبور sudo (برای حالت TUN لازم است)',
 			'meta.other' => 'دیگر',
 			'meta.dns' => 'DNS',

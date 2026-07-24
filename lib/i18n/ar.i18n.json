@@ -137,6 +137,7 @@
         "password": "كلمة المرور",
         "decryptPassword": "فك تشفير كلمة المرور",
         "required": "مطلوب",
+        "go": "متابعة",
         "sudoPassword": "كلمة مرور sudo (مطلوبة لوضع TUN)",
         "other": "آخر",
         "dns": "DNS",

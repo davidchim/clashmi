@@ -265,6 +265,7 @@ class _Translations$meta$ko implements Translations$meta$en {
 	@override String get password => '비밀번호';
 	@override String get decryptPassword => '복호화 비밀번호';
 	@override String get required => '필수';
+	@override String get go => '계속';
 	@override String get sudoPassword => 'sudo 비밀번호 (TUN 모드에 필요)';
 	@override String get other => '기타';
 	@override String get dns => 'DNS';
@@ -665,6 +666,7 @@ extension on TranslationsKo {
 			'meta.password' => '비밀번호',
 			'meta.decryptPassword' => '복호화 비밀번호',
 			'meta.required' => '필수',
+			'meta.go' => '계속',
 			'meta.sudoPassword' => 'sudo 비밀번호 (TUN 모드에 필요)',
 			'meta.other' => '기타',
 			'meta.dns' => 'DNS',

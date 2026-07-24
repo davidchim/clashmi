@@ -510,6 +510,9 @@ class Translations$meta$en {
 	/// en: 'Required'
 	String get required => 'Required';
 
+	/// en: 'Continue'
+	String get go => 'Continue';
+
 	/// en: 'sudo password (required for TUN mode)'
 	String get sudoPassword => 'sudo password (required for TUN mode)';
 
@@ -1325,6 +1328,7 @@ extension on Translations {
 			'meta.password' => 'Password',
 			'meta.decryptPassword' => 'Decrypt Password',
 			'meta.required' => 'Required',
+			'meta.go' => 'Continue',
 			'meta.sudoPassword' => 'sudo password (required for TUN mode)',
 			'meta.other' => 'Other',
 			'meta.dns' => 'DNS',

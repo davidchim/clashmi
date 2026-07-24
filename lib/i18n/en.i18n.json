@@ -137,6 +137,7 @@
         "password": "Password",
         "decryptPassword": "Decrypt Password",
         "required": "Required",
+        "go": "Continue",
         "sudoPassword": "sudo password (required for TUN mode)",
         "other": "Other",
         "dns": "DNS",
