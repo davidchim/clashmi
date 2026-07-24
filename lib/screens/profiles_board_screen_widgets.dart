@@ -322,34 +322,36 @@ class _ProfilesBoardScreenWidget extends State<ProfilesBoardScreenWidget> {
           },
         ),
       ],
-      ListTile(
-        title: Text(
-          setting.isRemote() ? tcontext.meta.view : tcontext.meta.edit,
-        ),
-        onTap: () async {
-          Navigator.of(context).pop();
-          final path = await ProfileManager.getProfilePath(setting.id);
-          final content = await File(path).readAsString();
-          if (!mounted) {
-            return;
-          }
-          await Navigator.push(
-            context,
-            MaterialPageRoute(
-              settings: FileViewScreen.routSettings(),
-              builder: (context) => FileViewScreen(
-                title: setting.getShowName(),
-                content: content,
-                onSave: setting.isRemote()
-                    ? null
-                    : (BuildContext context, String content) async {
-                        await File(path).writeAsString(content);
-                      },
+      if (provider?.hideNodeDetails == false) ...[
+        ListTile(
+          title: Text(
+            setting.isRemote() ? tcontext.meta.view : tcontext.meta.edit,
+          ),
+          onTap: () async {
+            Navigator.of(context).pop();
+            final path = await ProfileManager.getProfilePath(setting.id);
+            final content = await File(path).readAsString();
+            if (!mounted) {
+              return;
+            }
+            await Navigator.push(
+              context,
+              MaterialPageRoute(
+                settings: FileViewScreen.routSettings(),
+                builder: (context) => FileViewScreen(
+                  title: setting.getShowName(),
+                  content: content,
+                  onSave: setting.isRemote()
+                      ? null
+                      : (BuildContext context, String content) async {
+                          await File(path).writeAsString(content);
+                        },
+                ),
               ),
-            ),
-          );
-        },
-      ),
+            );
+          },
+        ),
+      ],
       if (setting.isRemote()) ...[
         ListTile(
           title: Text(tcontext.meta.update),
@@ -370,28 +372,30 @@ class _ProfilesBoardScreenWidget extends State<ProfilesBoardScreenWidget> {
             }
           },
         ),
-        ListTile(
-          title: Text(tcontext.meta.copyUrl),
-          onTap: () async {
-            Navigator.of(context).pop();
-            try {
-              Clipboard.setData(ClipboardData(text: setting.url));
-            } catch (e) {}
-          },
-        ),
-        ListTile(
-          title: Text(tcontext.meta.qrcode),
-          onTap: () async {
-            Navigator.of(context).pop();
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                settings: QrcodeScreen.routSettings(),
-                builder: (context) => QrcodeScreen(content: setting.url),
-              ),
-            );
-          },
-        ),
+        if (provider?.hideNodeDetails == false) ...[
+          ListTile(
+            title: Text(tcontext.meta.copyUrl),
+            onTap: () async {
+              Navigator.of(context).pop();
+              try {
+                Clipboard.setData(ClipboardData(text: setting.url));
+              } catch (e) {}
+            },
+          ),
+          ListTile(
+            title: Text(tcontext.meta.qrcode),
+            onTap: () async {
+              Navigator.of(context).pop();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  settings: QrcodeScreen.routSettings(),
+                  builder: (context) => QrcodeScreen(content: setting.url),
+                ),
+              );
+            },
+          ),
+        ],
       ],
 
       ListTile(
